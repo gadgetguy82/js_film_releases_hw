@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import FilmList from '../components/FilmList'
 import UpcomingReleases from '../components/UpcomingReleases'
+import '../css/style.css';
 
 class FilmBox extends Component {
   constructor(props) {
