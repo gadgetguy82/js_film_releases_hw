@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import FilmList from '../components/FilmList'
+import UpcomingReleases from '../components/UpcomingReleases'
 
 class FilmBox extends Component {
   constructor(props) {
@@ -31,7 +32,8 @@ class FilmBox extends Component {
           name: "The Addams Family",
           url: "https://www.imdb.com/title/tt1620981/?ref_=rlm"
         }
-      ]
+      ],
+      upcomingReleasesLink: "https://www.imdb.com/calendar/?region=gb"
     }
   }
 
@@ -39,7 +41,10 @@ class FilmBox extends Component {
     return(
       <div className="film-box">
         <h1>Upcoming Film Releases for UK</h1>
+        <hr/>
         <FilmList data={this.state.data}/>
+        <hr/>
+        <UpcomingReleases link={this.state.upcomingReleasesLink}/>
       </div>
     );
   }
