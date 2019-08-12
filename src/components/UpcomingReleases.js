@@ -4,7 +4,7 @@ class UpcomingReleases extends Component {
   render() {
     return(
       <button className="upcoming-releases">
-        <a href={this.props.link}>View more upcoming releases >></a>
+        <a href={this.props.link} target="_blank">View more upcoming releases >></a>
       </button>
     );
   }
